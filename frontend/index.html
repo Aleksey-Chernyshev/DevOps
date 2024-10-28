@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №1</title>
+</head>
+<body>
+    <h1>Введите текст</h1>
+    <form action="/submit" method="post">
+        <input type="text" name="text" placeholder="Введите текст" required>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <h2>Содержимое файла:</h2>
+    <form action="/refresh" method="get">
+        <textarea rows="10" cols="50" readonly>{{ data }}</textarea>
+        <br>
+        <button type="submit">Обновить данные</button>
+    </form>
+</body>
+</html>
